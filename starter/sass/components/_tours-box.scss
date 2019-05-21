@@ -54,6 +54,7 @@
     &-picture {
         background-size: cover;
         height: 14rem;
+        -webkit-background-blend-mode: color-burn;
         background-blend-mode: color-burn;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);

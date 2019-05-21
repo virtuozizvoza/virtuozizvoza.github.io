@@ -86,10 +86,6 @@
     &-img {
         display: block;
         width: 100%;
-
-        @include respond(tablet) {
-           display: none;
-        }
     }
 
     &-text {

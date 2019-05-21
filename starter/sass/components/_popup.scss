@@ -9,6 +9,11 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
+    
+    @include respond(tablet){
+        width: 100%;
+        height: auto;
+    }
 
     &:target {
         opacity: 1;

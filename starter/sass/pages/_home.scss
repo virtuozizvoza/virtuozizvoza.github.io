@@ -72,9 +72,9 @@
     }
 }
 .book {
-     background-image: -webkit-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%),
+      background-image: -webkit-gradient(linear, left top, right bottom, from(105deg), color-stop(0%, rgba($color-white, .9)), color-stop(50%, rgba($color-white, .9)), color-stop(50%, transparent)),
      url(/img/nat-10.jpg);
-    background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%),
+    background-image: linear-gradient(to right bottom, 105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%),
      url(/img/nat-10.jpg);
     background-size: 100%;
     border-radius: 3px;
@@ -82,11 +82,17 @@
             box-shadow: $box-shadow-big;
 
     @include respond(laptop) {
-        background-image: -webkit-gradient(105deg, rgba($color-white, .9) 0%,
-        rgba($color-white, .9) 65%, transparent 65%), url(/img/nat-10.jpg);
-        background-image: linear-gradient(105deg, rgba($color-white, .9) 0%,
-    rgba($color-white, .9) 65%, transparent 65%), url(/img/nat-10.jpg);
-    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(105deg), color-stop(0%, rgba($color-white, .9)), color-stop(65%, rgba($color-white, .9)), color-stop(65%, transparent)),
+    url(/img/nat-10.jpg);
+    background-image: linear-gradient(to right bottom, 105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%),
+    url(/img/nat-10.jpg);
+    //background-size: cover;
+    }
+    @include respond(tablet) {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-white, .9)),
+    to(rgba($color-white, .9)));
+    background-image: linear-gradient(to right bottom, rgba($color-white, .9) 0%,
+    rgba($color-white, .9) 100%);
     }
     @include respond(tablet) {
         background-image: -webkit-gradient(105deg, rgba($color-white, .9) 0%,

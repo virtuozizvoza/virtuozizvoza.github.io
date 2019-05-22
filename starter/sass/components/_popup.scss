@@ -10,7 +10,6 @@
     visibility: hidden;
     transition: all .3s;
     
-
     &:target {
         opacity: 1;
         visibility: visible;
@@ -54,8 +53,9 @@
         transition: .4s .2s;
 
         @include respond(tablet) {
-            width: 95%;
-            height: auto,
+            width: 90%;
+            height: auto;
+            display: block;
         }
     }
 
@@ -79,6 +79,7 @@
         @include respond(tablet) {
             padding: 1.5rem;
             width: 100%;
+            display: block;
         }     
 
     }
@@ -86,7 +87,7 @@
     &-img {
         display: block;
         width: 100%;
-        
+
         @include respond(tablet) {
            display: none;
         }
@@ -109,8 +110,8 @@
        
         @include respond(tablet) {
             margin-bottom: 1rem;
-            -webkit-column-count: 1;
-                column-count: 1;
+            -webkit-column-count: 0;
+                column-count: 0;
         }
     }
 }

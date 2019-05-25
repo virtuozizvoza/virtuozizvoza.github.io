@@ -92,8 +92,7 @@ url(../img/nat-10.jpg);
     @include respond(tablet) {
         background-image: linear-gradient(to right, 
         rgba($color-white, .9) 0%,
-        rgba($color-white, .9) 100%),
-url(../img/nat-10.jpg);
+        rgba($color-white, .9) 100%)
     }
 
     &-form {

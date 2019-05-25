@@ -54,19 +54,21 @@
     &-picture {
         background-size: cover;
         height: 14rem;
-        background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
         &-1 {
+            background-blend-mode: color-burn;
             background-image: -webkit-gradient(linear, left top, right bottom, from($color-sec-light), to($color-sec-dark)), url(../img/nat-5.jpg);
             background-image: linear-gradient(to right bottom, $color-sec-light, $color-sec-dark), url(../img/nat-5.jpg);
         }
         &-2 {
+            background-blend-mode: color-burn;
             background-image: -webkit-gradient(linear, left top, right bottom, from($color-light), to($color-dark)), url(../img/nat-6.jpg);
             background-image: linear-gradient(to right bottom, $color-light, $color-dark), url(../img/nat-6.jpg);   
         }
         &-3 {
+            background-blend-mode: color-burn;
             background-image: -webkit-gradient(linear, left top, right bottom, from($color-ter-light), to($color-ter-dark)), url(../img/nat-7.jpg);
             background-image: linear-gradient(to right bottom, $color-ter-light, $color-ter-dark), url(../img/nat-7.jpg);   
         }

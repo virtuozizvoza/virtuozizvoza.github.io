@@ -7,7 +7,7 @@
         padding: 15rem 18rem;
     }
     @include respond(phone) {
-        padding: 12rem 4rem 12rem 4rem;
+        padding: 12rem 4rem;
     }
 }
 .section-features {
@@ -19,7 +19,7 @@
     //clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     -webkit-transform: skewY(-7deg);
             transform: skewY(-7deg);
-    padding: 15rem 10rem;
+    padding: 15rem 8rem;
     font-size: 0.9rem;
     margin-top: -6rem;
 
@@ -37,15 +37,14 @@
 }
 .section-tours {
     background-color: $color-light-grey;
-    padding: 20rem 10rem 10rem 10rem;
+    padding: 20rem 10rem;
     margin-top: -15vh;
 
     @include respond(tablet) {
-        padding: 12rem 18rem 5rem 18rem;
-        margin-top: -10vh;
+        padding: 12rem 18rem;
     }
     @include respond(phone) {
-        padding: 10rem 4rem 2rem 4rem;
+        padding: 8rem 4rem;
     }
 }
 .section-stories {
@@ -56,7 +55,7 @@
         padding: 5rem 18rem;
     }
     @include respond(phone) {
-        padding: 3rem 4rem 2rem 4rem; 
+        padding: 3rem 4rem;
     }
 }
 .section-book {
@@ -72,33 +71,29 @@
     }
 }
 .book {
-      background-image: -webkit-gradient(linear, left top, right bottom, from(105deg), color-stop(0%, rgba($color-white, .9)), color-stop(50%, rgba($color-white, .9)), color-stop(50%, transparent)),
-     url(/img/nat-10.jpg);
-    background-image: linear-gradient(to right bottom, 105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%),
-     url(/img/nat-10.jpg);
+    background-image: linear-gradient(105deg, 
+                                    rgba($color-white, .9) 0%,
+                                    rgba($color-white, .9) 50%,
+                                    transparent 50%) ,
+                            url(../img/nat-10.jpg);
     background-size: 100%;
     border-radius: 3px;
-    -webkit-box-shadow: $box-shadow-big;
-            box-shadow: $box-shadow-big;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
     @include respond(laptop) {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(105deg), color-stop(0%, rgba($color-white, .9)), color-stop(65%, rgba($color-white, .9)), color-stop(65%, transparent)),
-    url(/img/nat-10.jpg);
-    background-image: linear-gradient(to right bottom, 105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%),
-    url(/img/nat-10.jpg);
-    //background-size: cover;
+        background-image: linear-gradient(105deg, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%) ,
+url(../img/nat-10.jpg);
+        background-size: cover;
     }
+
     @include respond(tablet) {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-white, .9)),
-    to(rgba($color-white, .9)));
-    background-image: linear-gradient(to right bottom, rgba($color-white, .9) 0%,
-    rgba($color-white, .9) 100%);
-    }
-    @include respond(tablet) {
-        background-image: -webkit-gradient(105deg, rgba($color-white, .9) 0%,
-        rgba($color-white, .9) 100%,);
-        background-image: linear-gradient(105deg, rgba($color-white, .9) 0%,
-    rgba($color-white, .9) 100%,);
+        background-image: linear-gradient(to right, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%),
+url(../img/nat-10.jpg);
     }
 
     &-form {

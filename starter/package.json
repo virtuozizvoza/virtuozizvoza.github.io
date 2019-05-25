@@ -4,12 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "compile:sass": "node-sass starter/sass/main.scss starter/css/style.css"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icons.css css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile:sass concat:css prefix compress"
   },
   "author": "Arbutina Kristian",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "autoprefixer": "^9.5.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2"
   }
 }

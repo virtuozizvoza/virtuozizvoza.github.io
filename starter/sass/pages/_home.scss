@@ -43,7 +43,7 @@
     margin-top: -15vh;
 
     @include respond(tablet) {
-        margin-top: -5vh;
+        margin-top: -10vh;
         padding: 12rem 18rem;
     }
     @include respond(phone) {

@@ -13,7 +13,8 @@
     transition: transform .3s, -webkit-transform .3s;
 
     @include respond(tablet) {
-        width:50rem;
+        max-width: 50rem;
+        width: 100%;
         padding: 1rem;
     }
 
